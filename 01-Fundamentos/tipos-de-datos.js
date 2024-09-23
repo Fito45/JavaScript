@@ -24,6 +24,14 @@ es el valor que se le asigna a una variable que se la ha sido declarada pero no 
 *arrer o arrego son un conjunto de datos que los almacenas en una lista ordenada de elementos 
 
 los datos dentro de los arreglos se escriben entre corchetes [] y separados por comas ""
+
+2. tipos de datos complejos o de objetos
+
+*Object este tipo de dato es de multiples pares de claves valor 
+se escribe ente "[]" y se parado por ","
+
+*Funciones son un tipo de dato invocado y se declaran con la palabra reservada funcion y el codigo que ejecuta entre llaves "{}"
+
 */
 
 let miNumero = 29;
@@ -58,14 +66,48 @@ x = prompt("cual es tu numero favorito?");
 
 console.log(x); //valor que el usuario introduzca
 
-/* array */ 
+/* array */
+//accedemos a los datos del array con corchetes "{}"
 
-let misFrutasFavoritas = ["Pera","Platano","Manzana"];
+let misFrutasFavoritas = ["Pera", "Platano", "Manzana"];
 
-let misNumerosSuerte = [45,10,13,29];
+let misNumerosSuerte = [45, 10, 13, 29];
 
-let OtroArray = ["Fito",29,true];
+let OtroArray = ["Fito", 29, true];
 
 console.log(misFrutasFavoritas);
 console.log(misNumerosSuerte);
 console.log(OtroArray);
+
+/* objeto */
+
+let persona = {
+    // clave : valor,
+    nombre: "Fito",
+    edad: 20,
+    colorCabello: "negro",
+    colorOjos: "cafe",
+    vivo: true,
+    conPareja: false,
+
+}
+
+console.log(persona)
+
+//accedemos al valor de una clave de un objeto
+//con la anotacion de punto
+
+console.log(persona.nombre);
+console.log(persona.vivo);
+console.log(persona.edad);
+
+/*funcion */
+
+let mensaje = function () {
+//pasamos al codigo que activa la funcion
+
+console.log("este es un mensaje lanzando por una funcion")
+
+}
+
+mensaje();
