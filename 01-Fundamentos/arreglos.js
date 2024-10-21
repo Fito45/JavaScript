@@ -99,3 +99,97 @@ console.log(numerosSuerte)
 numerosSuerte.pop()
 
 console.log(numerosSuerte)
+
+/*
+
+unshift= agrega un elemento al inicio del array 
+
+nombreArray.unshift(elemento nuevo)
+
+*/
+
+console.log(frutasFavoritas);
+
+frutasFavoritas.unshift("platano");
+
+console.log(frutasFavoritas);
+
+/*
+
+Shift -> elimina el primer elemento del array
+
+nombrearray.shift()
+
+*/
+
+console.log(numerosSuerte);
+
+let quitarPrimero = numerosSuerte.shift();
+
+console.log(numerosSuerte);
+console.log(quitarPrimero);
+
+/*
+indexOf() -> encuentra el indice de un elemento en el array
+
+nombreArray.indexOf(dato);
+
+*/
+
+let indicar = frutasFavoritas.indexOf("kiwi");
+
+console.log(indicar);
+
+/*
+
+splice() -> elimina o agrega elementos al array desde una posicion especifica
+
+Eliminar:
+
+NombreArray.Splice(indiceInicio, IndiceFinal);
+
+Agregar:
+
+NombreArray.Splice(indiceInicio, pasos, valor1, valor2);
+
+*/
+
+console.log(frutasFavoritas);
+
+frutasFavoritas.splice(1, 2);
+
+console.log(frutasFavoritas);
+
+frutasFavoritas.splice( 1, 0, "manzana", "melon")
+
+/*
+
+slice -> se crea un nuevo array, se tiene que asignar a una variable
+
+nombreArray.slice(nombreInicio, IndiceFinal)
+
+*/
+
+let frutasCopia = frutasFavoritas.slice(3,5)
+
+console.log(frutasCopia);
+
+/*
+
+sort() - ordena los elementos de un array de mayor a menor
+
+nombreArray.sort() -de primeras no pasamos ningun dato entre los parentesis
+
+*/
+
+console.log(frutasFavoritas);
+
+frutasFavoritas.sort();
+
+console.log(frutasFavoritas);
+
+console.log(numerosSuerte);
+
+numerosSuerte.sort();
+
+console.log(numerosSuerte);
